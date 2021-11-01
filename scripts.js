@@ -53,11 +53,11 @@ function horas() {
         if (h < 9) {
             h++
             document.getElementById("horas").innerHTML = `0${h}`
-            minutos()
+            segundos()
         } else {
             m++
             document.getElementById("horas").innerHTML = `${h}`
-            minutos()
+            segundos()
         }
     } else {
         h++
