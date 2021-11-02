@@ -11,13 +11,13 @@ function segundos() {
             setTimeout(function () {
                 document.getElementById("segundos").innerHTML = `0${s}`
                 segundos()
-            }, 1000);
+            }, 990);
         } else {
             s++
             setTimeout(function () {
                 document.getElementById("segundos").innerHTML = `${s}`
                 segundos()
-            }, 1000);
+            }, 990);
         }
     } else {
         s++
@@ -25,7 +25,7 @@ function segundos() {
             document.getElementById("segundos").innerHTML = `00`
             s = 0
             minutos()
-        }, 1000);
+        }, 990);
     }
 }
 
