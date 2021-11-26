@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap" rel="stylesheet">
     <title>Cronômetro</title>
 </head>
+
 <body>
-    <p id="dias">0</p>
-    <p id="horas">00</p>
-    <p id="minutos">00</p>
-    <p id="segundos">00</p>
-    <button onclick="segundos()">Começar</button>
-    
+    <div id="principalConteiner">
+        <div id="timeBox">
+            <p class="time" id="dias">0:</p>
+            <p class="time" id="horas">00:</p>
+            <p class="time" id="minutos">00:</p>
+            <p class="time" id="segundos">00</p>
+        </div>
+        <div id="conteiner_buttons">
+            <div id="divInicioContinue">
+                <img id="inicio" onclick="inicio()" src="./play-solid.svg"></img>
+            </div>
+            <img id="BotaoParar" onclick="parar()" src="./circle-pause-regular.svg"></img>
+            <div id="divStop">
+                <img id="Reiniciar" onclick="resetar()" src="./stop-solid.svg"></img>
+            </div>
+        </div>
+    </div>
 </body>
 
 <script src="./scripts.js"></script>
